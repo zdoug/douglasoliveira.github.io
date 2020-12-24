@@ -1,0 +1,46 @@
+body {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  margin: 0;
+}
+::selection {
+  background: $color1;
+  color: $color0;
+}
+::-moz-selection {
+  background: $color1;
+  color: $color0;
+}
+img {
+  vertical-align: middle;
+}
+
+img[alt="Douglas Oliveira"] {
+  border-radius: 50%;
+}
+
+.container {
+  padding-right: 20px;
+	padding-left: 20px;
+	margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+.img-responsive {
+  display: block;
+	max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.text-90-left {
+  transform: rotate(-90deg);
+  transform-origin: 0 0;
+  position: fixed;
+  top: 50%;
+  margin-top: -10rem;
+  left: 1%;
+  font-family: "Krona One";
+  font-size: $font-size;
+}

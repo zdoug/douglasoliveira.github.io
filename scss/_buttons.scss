@@ -1,0 +1,65 @@
+.btn {
+  display: inline-block;
+  padding: 13px $font-size;
+  border-width: 3px;
+  border-style: solid;
+  border-radius: 3 * $font-size;
+  font-size: $font-size * 1.2;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: $font-size;
+  margin-right: .5 * $font-size;
+  & img {
+    max-width: 25px;
+    vertical-align: sub;
+  }
+  &:hover {
+    box-shadow: 0 0 20px rgba(0,0,0,.3);
+  }
+}
+
+.btn-primary {
+  background: $color1;
+  color: white;
+  border-color: $color1;
+  &:hover, &:focus {
+    background: $color2;
+    color: white;
+    border-color: $color2;
+    outline: none;
+  }
+}
+
+.btn-secondary {
+  background: $text-color;
+  color: white;
+  border-color: $text-color;
+  &:hover, &:focus {
+    background: #272727;
+    color: white;
+    border-color: #272727;
+    outline: none;
+  }
+}
+
+.btn-terciary {
+  background: $color3;
+  color: white;
+  border-color: $color3;
+  &:hover, &:focus {
+    background: #3c444c;
+    color: white;
+    border-color: #3c444c;
+    outline: none;
+  }
+}
+
+.btn-ghost {
+  color: $text-color;
+  border-color: $text-color;
+  &:hover, &:focus {
+    background: $text-color;
+    color: white;
+    outline: none;
+  }
+}

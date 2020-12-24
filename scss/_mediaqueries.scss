@@ -1,0 +1,13 @@
+@media screen and (max-width: 991px) {
+  html {
+    font-size: $font-size * .6;
+  }
+  .container {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  p {
+    font-size: $font-size;
+  }
+}
