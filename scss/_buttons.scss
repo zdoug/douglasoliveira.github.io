@@ -54,6 +54,18 @@
   }
 }
 
+.btn-quaternary {
+  background: $color4;
+  color: white;
+  border-color: $color4;
+  &:hover, &:focus {
+    background: #c83e63;
+    color: white;
+    border-color: #c83e63;
+    outline: none;
+  }
+}
+
 .btn-ghost {
   color: $text-color;
   border-color: $text-color;
