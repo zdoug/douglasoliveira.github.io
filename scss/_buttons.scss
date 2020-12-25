@@ -18,7 +18,17 @@
   }
 }
 
-.btn-primary {
+.btn-ghost {
+  color: $text-color;
+  border-color: $text-color;
+  &:hover, &:focus {
+    background: $text-color;
+    color: white;
+    outline: none;
+  }
+}
+
+.btn-behance {
   background: $color1;
   color: white;
   border-color: $color1;
@@ -30,7 +40,7 @@
   }
 }
 
-.btn-secondary {
+.btn-codepen {
   background: $text-color;
   color: white;
   border-color: $text-color;
@@ -42,7 +52,7 @@
   }
 }
 
-.btn-terciary {
+.btn-github {
   background: $color3;
   color: white;
   border-color: $color3;
@@ -54,7 +64,7 @@
   }
 }
 
-.btn-quaternary {
+.btn-instagram {
   background: $color4;
   color: white;
   border-color: $color4;
@@ -62,16 +72,6 @@
     background: #c83e63;
     color: white;
     border-color: #c83e63;
-    outline: none;
-  }
-}
-
-.btn-ghost {
-  color: $text-color;
-  border-color: $text-color;
-  &:hover, &:focus {
-    background: $text-color;
-    color: white;
     outline: none;
   }
 }
