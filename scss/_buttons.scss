@@ -10,11 +10,12 @@
   margin-top: $font-size;
   margin-right: .5 * $font-size;
   & img {
-    max-width: 25px;
+    max-width: 22px;
     vertical-align: sub;
+    margin-right: 1rem;
   }
-  &:hover {
-    box-shadow: 0 0 20px rgba(0,0,0,.3);
+  &:hover, &:focus {
+    box-shadow: 0 0 20px rgba(0,0,0,.15);
   }
 }
 
@@ -22,8 +23,8 @@
   color: $text-color;
   border-color: $text-color;
   &:hover, &:focus {
-    background: $text-color;
-    color: white;
+    background: #eee;
+    color:black;
     outline: none;
   }
 }
