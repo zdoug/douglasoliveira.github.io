@@ -33,14 +33,3 @@ img[alt="Douglas Oliveira"] {
 	max-width: 100%;
   height: auto;
 }
-
-.text-90-left {
-  transform: rotate(-90deg);
-  transform-origin: 0 0;
-  position: fixed;
-  top: 50%;
-  margin-top: -10rem;
-  left: 1%;
-  font-family: "Krona One";
-  font-size: $font-size;
-}
