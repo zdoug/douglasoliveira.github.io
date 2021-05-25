@@ -1,78 +1,22 @@
-.btn {
+.btn-link {
   display: inline-block;
-  padding: 13px $font-size;
-  border-width: 3px;
-  border-style: solid;
-  border-radius: 3 * $font-size;
-  font-size: $font-size * 1.2;
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 400;
+  font-size: 1.25rem;
   text-decoration: none;
-  font-weight: bold;
-  margin-top: $font-size;
-  margin-right: .5 * $font-size;
-  & img {
-    max-width: 22px;
-    vertical-align: sub;
-    margin-right: 1rem;
-  }
-  &:hover, &:focus {
-    box-shadow: 0 0 20px rgba(0,0,0,.15);
+  margin-top: 1rem;
+  & .fas {
+    margin-left: 0.5rem;
+    transform: rotate(-45deg);
   }
 }
 
-.btn-ghost {
-  color: $text-color;
-  border-color: $text-color;
-  &:hover, &:focus {
-    background: #eee;
-    color:black;
-    outline: none;
-  }
-}
-
-.btn-behance {
-  background: $color1;
-  color: white;
-  border-color: $color1;
-  &:hover, &:focus {
-    background: $color2;
-    color: white;
-    border-color: $color2;
-    outline: none;
-  }
-}
-
-.btn-codepen {
-  background: $text-color;
-  color: white;
-  border-color: $text-color;
-  &:hover, &:focus {
-    background: #272727;
-    color: white;
-    border-color: #272727;
-    outline: none;
-  }
-}
-
-.btn-github {
-  background: $color3;
-  color: white;
-  border-color: $color3;
-  &:hover, &:focus {
-    background: #3c444c;
-    color: white;
-    border-color: #3c444c;
-    outline: none;
-  }
-}
-
-.btn-instagram {
-  background: $color4;
-  color: white;
-  border-color: $color4;
-  &:hover, &:focus {
-    background: #c83e63;
-    color: white;
-    border-color: #c83e63;
-    outline: none;
+.arrow {
+  color: #333;
+  font-size: 4rem;
+  animation: .5s intro ease;
+  &:hover {
+    color: #666;
   }
 }

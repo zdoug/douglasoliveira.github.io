@@ -1,0 +1,337 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Barlow", sans-serif;
+  overflow-x: hidden;
+}
+header {
+  position: absolute;
+  width: 100%;
+  padding: 2rem;
+  & .container > div, & .container ul {
+    flex: 0 0 50%;
+  }
+  & #logo {
+    animation: .5s intro ease;
+    grid-column: 1/2;
+    font-weight: 700;
+    color: white;
+    font-size: 2rem;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    &::after {
+      background-image: linear-gradient(90deg, $color1, $color2);
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      position: absolute;
+      top: 66%;
+      right: -8%;
+      z-index: -1;
+    }
+  }
+  & ul {
+    grid-column: 2/3;
+    padding: 0;
+    text-align: right;
+    list-style: none;
+    & li {
+      display: inline-block;
+      animation: .5s intro ease;
+      margin-left: 2rem;
+    }
+    & li:first-child {
+      margin-left: 0;
+    }
+    & li a {
+      color: white;
+      font-size: 2rem;
+    }
+  }
+}
+.container {
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;  
+}
+
+@keyframes intro {
+  0% {opacity: 0; transform: translateX(-2rem);}
+  100% {opacity: 1; transform: translateX(0);}
+}
+.container.col-flex {
+  display: flex;
+}
+.col-flex {
+  display: flex;
+}
+main {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  flex-direction: column;
+  background: $color-text;
+  & .container {
+    flex-direction: column;
+  }
+  & h1 {
+    animation: .5s intro ease;
+    background-color: $color-text;
+    font-size: 7rem;
+    background-image: linear-gradient(90deg, $color1, $color2);
+    background-size: 100%;
+    font-weight: 800;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    display: inline-block;
+    margin-bottom: 5rem;
+    margin-top: 8vh;
+    & strong {
+      border-bottom: 10px solid #333;
+      font-weight: 800;
+    }
+    & a {
+      text-decoration: none;
+    }
+  }
+  & p {
+    color: white;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    max-width: (30 * 1.5rem);
+  }
+  & .btn-white {
+  }
+}
+
+section {
+  padding: 8rem 0;
+}
+
+.img-fluid {
+  display: block;
+  max-width: 100%;
+}
+.container-card {
+  margin-top: 5rem;
+}
+.card {
+  padding: 3rem;
+  border: 2px solid $color-text;
+  background: white;
+  flex: 0 0 50%;
+  & h2 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+  }
+  & p {
+    font-size: 1.75rem;
+  }
+}
+#services {
+  position: relative;
+  & img.img-avatar {
+    border-radius: 50%;
+    &:after {
+      content: "Tenho uma década de experiência";
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+  }
+  & h2.intro {
+    font-size: 3rem;
+    padding-left: 5rem;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+  }
+}
+.portfolio-item {
+  color: white;
+  & img {
+    display: block;
+    max-width: 100%;
+  }
+  & h3 {
+    font-weight: 700;
+    font-size: 2rem;
+  }
+  & h4 {
+    font-size: 1.5rem;
+    color: #787878;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+  }
+}
+#clients {
+  overflow: hidden;
+  background-image: linear-gradient(90deg, $color1, $color2);
+  & h2 {
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 4rem;
+  }
+}
+#wrapper {
+  width: 100%;
+  &.container {
+    display: grid;
+  }
+}
+#scroller {
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	width: 4000px;
+	-webkit-transform: translateZ(0);
+	-moz-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	-o-transform: translateZ(0);
+	transform: translateZ(0);
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-text-size-adjust: none;
+	-moz-text-size-adjust: none;
+	-ms-text-size-adjust: none;
+	-o-text-size-adjust: none;
+	text-size-adjust: none;
+}
+
+#scroller ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+  display: flex;
+}
+
+#scroller li {
+	flex: 0 0 500px;
+  padding: 4rem;
+  background: #000;
+	margin-right: 1px;
+	font-size: 14px;
+  cursor: grab;
+  -moz-cursor: grab;
+  -webkit-cursor: grab;
+}
+
+#scroller ul li:last-child {
+  margin-right: 0;
+}
+
+#phrases {
+  background: white;
+  color: $color-text;
+  & img {
+    border-radius: 50%;
+  }
+  & h2 {
+    grid-column: 1/-1;
+    font-size: 4rem;
+  }
+}
+
+#brands {
+  background: $color-text;
+  color: #fff;
+  & h2, ul {
+    grid-column: 1 / -1;
+  }
+  & h2 {
+    background-color: $color-text;
+    font-size: 3rem;
+    background-image: linear-gradient(90deg, $color1, $color2);
+    background-size: 100%;
+    font-weight: 800;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    margin-bottom: 5rem;
+    text-align: center;
+  }
+  & ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    & li {
+      border: 2px solid white;
+      min-height: 200px;
+      display: flex;
+      margin-top: -1px;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+    }
+    & li:first-child {
+      margin-left: 0;
+    }
+    & li img {
+      max-width: 250px;
+      max-height: 65px;
+      margin: 0 auto;
+      display: block;
+    }
+  }
+}
+footer {
+  padding: 4rem 0;
+  & .container div {
+    flex: 0 0 50%;
+    padding-right: 10%;
+    &  p {
+      font-size: 3rem;
+    }
+  }
+}
+footer p {
+  & a {
+    color: $color-text;
+    text-decoration: none;
+    position: relative;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    &:after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 5px;
+      background-image: linear-gradient(90deg, $color1, $color2);
+      background-size: 100%;
+      top: 100%;
+      left: 0;
+      transition: all 0.2s ease;
+      z-index: -1;
+    }
+    &:hover {
+      color: #fff;
+      transition: all 0.2s ease;
+    }
+    &:hover:after {
+      height: 100%;
+      height: 100%;
+      top: 0;
+      transition: all 0.2s ease;
+    }
+  }
+  &.copyright {
+    margin-top: 2rem;
+  } 
+}
