@@ -1,4 +1,79 @@
-@media screen and (max-width: 991px ) {
+@media screen and (max-width: 1500px) {
+  .portfolio-item {
+    padding: 2rem 3rem;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1500px) {
+  header {
+    padding: 2rem 3rem;
+  }
+  section, footer {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  main {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    & .container {
+      height: 100vh;
+      justify-content: center;
+    }
+    & h1 {
+      font-size: 4rem;
+      & strong {
+        border-width: 5px;
+      }
+    }
+  }
+  #services h2.intro {
+    font-size: 2rem;
+    padding-right: 5rem;
+  }
+  #services img.img-avatar {
+    max-width: 300px;
+  }
+  .card {
+    padding: 4rem 3rem;
+    & h2 {
+      font-size: 3rem;
+    }
+    & p {
+      font-size: 1.5rem;
+    }
+  }
+  .portfolio-item {
+    h3 {
+      font-size: 1.6rem;
+    }
+    h4 {
+      font-size: 1.1rem;
+    }
+  }
+  .btn-link {
+    font-size: 1rem;
+  }
+  #scroller {
+    width: 2807px;
+    li {
+      flex: 0 0 350px;
+      padding: 3rem;
+    }
+  }
+  footer {
+    & .container div p {
+      font-size: 2rem;
+    }
+    & .container div p:first-child {
+      margin-bottom: .75rem;
+    }
+    & p a::after {
+      height: 4px;
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
   html {
     font-size: 10px;
   }
@@ -12,18 +87,23 @@
       }
     }
   }
+  header #logo img {
+    width: 150px;
+  }
+  
   .container-info, .container-card {
     flex-direction: column;
     padding-left: 2rem;
     padding-right: 2rem;
   }
   #services img.img-avatar {
-    max-width: 20rem;
-    margin: 0 auto 3rem;
+    max-width: 15rem;
+    margin: 0 auto 2rem;
   }
   #services h2.intro {
     text-align: center;
     padding: 0;
+    font-size: 2.5rem;
   }
   .card {
     padding: 3rem 3rem 4rem;
@@ -34,23 +114,29 @@
   .card + .card {
     border-top-width: 0;
   }
-  #wrapper {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-  #scroller {
-    width: 2005px;
-    & ul li {
-      flex: 0 0 250px;
-    }
+  .portfolio-item {
+    flex: 0 0 48%;
   }
   footer .container {
     flex-direction: column;
+  }
+  footer .container div p {
+    margin-top: 1rem;
+    font-size: 2.5rem;
+  }
+  footer p.copyright {
+    margin-top: 4rem;
+    font-size: 1.5rem;
   }
 }
 
 @media screen and (min-height: 720px) and (max-height: 900px) {
   main h1 {
-    font-size: 5rem;
+    font-size: 4rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .portfolio-item {
+    flex: 0 0 100%;
   }
 }
