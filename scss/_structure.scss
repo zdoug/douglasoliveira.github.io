@@ -154,13 +154,13 @@ section {
     border-radius: 50%;
     max-height: 220px;
   }
-  & h2.intro {
+  & h3.intro {
     font-size: 3rem;
     padding-left: 5rem;
     flex-direction: column;
     justify-content: center;
     display: flex;
-  }
+    }
 }
 .portfolio-item {
   color: white;
