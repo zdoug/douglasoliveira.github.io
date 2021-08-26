@@ -325,6 +325,8 @@ footer p {
   height: 100%;
   top: 0;
   left: 0;
+  z-index: 9999;
+  animation: .5s intro ease;
 }
 .cookie-box {
   pointer-events: all;
@@ -334,7 +336,6 @@ footer p {
   margin-bottom: 2rem;
   padding: 2rem;
   text-align: center;
-  display: none;
   & p {
     font-size: 1.2rem;
     line-height: 1.5;
@@ -354,6 +355,7 @@ footer p {
     padding: 1rem 3rem;
     color: black;
     text-decoration: none;
+    cursor: pointer;
   }
   & a.button-cookie-choice:last-child {
     background: #222;

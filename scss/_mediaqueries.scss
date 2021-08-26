@@ -145,6 +145,14 @@
     font-size: 4rem;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .cookie-box {
+    max-width: initial;
+    margin-bottom: 0;
+  }
+}
+
 @media screen and (max-width: 500px) {
   .portfolio-item {
     flex: 0 0 100%;
