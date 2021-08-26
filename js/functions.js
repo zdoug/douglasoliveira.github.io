@@ -32,12 +32,15 @@ window.onload = function() {
         var imported = document.createElement('script');
         imported.src = 'https://www.googletagmanager.com/gtag/js?id=UA-119233315-1';
         document.head.appendChild(imported);
-
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'UA-119233315-1');
+        var importedCode = document.createElement('script');
+        importedCode.createTextNode(dataGoogle);
+        document.head.appendChild(importedCode);
+        
+        var dataGoogle = "";
+        dataGoogle += "window.dataLayer = window.dataLayer || [];";
+        dataGoogle += "function gtag(){dataLayer.push(arguments);}";
+        dataGoogle += "gtag('js', new Date());";
+        dataGoogle += "gtag('config', 'UA-119233315-1');"
       }
   }
 
