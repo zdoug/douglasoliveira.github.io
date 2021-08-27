@@ -1,4 +1,12 @@
 window.onload = function() {
+
+  DataScripts = {
+    googleAnalytics: function() {
+      gtag('consent', 'update', {
+        'ad_storage': 'granted'
+      });
+    }
+  }
   
   if(!localStorage.getItem('choiceCookieUser')) {
 
@@ -32,13 +40,8 @@ window.onload = function() {
     DataScripts.googleAnalytics(); 
   }
 
-  DataScripts = {
-      googleAnalytics: function() {
-        gtag('consent', 'update', {
-          'ad_storage': 'granted'
-        });
-      }
-  }
+  
+    
 
 }
 
