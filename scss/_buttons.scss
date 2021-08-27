@@ -13,7 +13,7 @@
 }
 
 .arrow {
-  color: #333;
+  color: #666;
   font-size: 4rem;
   animation: .5s intro ease;
   position: absolute;
@@ -21,6 +21,6 @@
   bottom: -7rem;
   left: 0;
   &:hover {
-    color: #666;
+    color: $color1;
   }
 }
