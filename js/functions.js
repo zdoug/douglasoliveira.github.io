@@ -22,7 +22,11 @@ window.onload = function() {
       });
     }
 
-  }  
+  } else {
+    if(localStorage.getItem('choiceCookieUser') == "Allowed") {
+      loadDataScripts();
+    }
+  } 
   
   function loadDataScripts() {
     DataScripts.googleAnalytics(); 
