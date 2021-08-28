@@ -7,7 +7,7 @@ window.onload = function() {
       });
     }
   }
-  
+  // Cookies
   if(!localStorage.getItem('choiceCookieUser')) {
 
     var cookiesBox = document.querySelector(".cookies");
@@ -38,6 +38,17 @@ window.onload = function() {
   
   function loadDataScripts() {
     DataScripts.googleAnalytics(); 
+  }
+
+  let loadingElement = document.querySelector(".load");
+  document.onreadystatechange = function() {
+    if(document.readyState !== "complete") {
+      loadingElement.classList.remove("hide");
+      document.body.classList.add("hide");
+    } else {
+      loadingElement.classList.add("hide");
+      document.body.classList.remove("hide");
+    }
   }
 
   
