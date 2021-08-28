@@ -39,18 +39,19 @@ window.onload = function() {
   function loadDataScripts() {
     DataScripts.googleAnalytics(); 
   }
+  
+}
 
-  let loadingElement = document.querySelector(".load");
-  document.onreadystatechange = function() {
-    if(document.readyState !== "complete") {
-      loadingElement.classList.remove("hide");
-      document.body.classList.add("hide");
-    } else {
-      loadingElement.classList.add("hide");
-      document.body.classList.remove("hide");
-    }
+document.onreadystatechange = function() {
+  if (document.readyState !== "complete") {
+      document.querySelector(
+        "body").style.visibility = "hidden";
+      document.querySelector(
+        ".load").style.visibility = "visible";
+  } else {
+      document.querySelector(
+        ".load").style.display = "none";
+      document.querySelector(
+        "body").style.visibility = "visible";
   }
-
-
-
-
+};
