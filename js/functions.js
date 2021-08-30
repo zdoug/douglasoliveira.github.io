@@ -39,9 +39,26 @@ window.onload = function() {
   function loadDataScripts() {
     DataScripts.googleAnalytics(); 
   }
+
+
+  // Scroll Smooth after click
+  let nextSectionButton = document.querySelector(".arrow");
+  nextSectionButton.addEventListener("click", function(e){
+    downSection(e);
+  });
+
+  function downSection(e) {
+    e.preventDefault();
+    var elementHeight = document.querySelector("main").clientHeight;
+    window.scrollTo({
+      top: elementHeight,
+      behavior: 'smooth'
+    });
+  }
   
 }
 
+// Loading
 document.onreadystatechange = function() {
   if (document.readyState !== "complete") {
       document.querySelector(
@@ -55,3 +72,4 @@ document.onreadystatechange = function() {
         "body").style.visibility = "visible";
   }
 };
+
