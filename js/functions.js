@@ -1,5 +1,13 @@
 window.onload = function() {
-  
+
+  DataScripts = {
+    googleAnalytics: function() {
+      gtag('consent', 'update', {
+        'ad_storage': 'granted'
+      });
+    }
+  }
+  // Cookies
   if(!localStorage.getItem('choiceCookieUser')) {
 
     var cookiesBox = document.querySelector(".cookies");
@@ -31,15 +39,19 @@ window.onload = function() {
   function loadDataScripts() {
     DataScripts.googleAnalytics(); 
   }
-
-  DataScripts = {
-      googleAnalytics: function() {
-        gtag('consent', 'update', {
-          'ad_storage': 'granted'
-        });
-      }
-  }
-
+  
 }
 
-
+document.onreadystatechange = function() {
+  if (document.readyState !== "complete") {
+      document.querySelector(
+        "body").style.visibility = "hidden";
+      document.querySelector(
+        ".load").style.visibility = "visible";
+  } else {
+      document.querySelector(
+        ".load").style.display = "none";
+      document.querySelector(
+        "body").style.visibility = "visible";
+  }
+};
