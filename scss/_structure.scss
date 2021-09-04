@@ -138,6 +138,10 @@ section {
 }
 .portfolio-item {
   color: white;
+  & a {
+    color: white;
+    text-decoration: none;
+  }
   & img {
     display: block;
     max-width: 100%;
