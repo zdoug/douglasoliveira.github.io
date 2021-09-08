@@ -1,5 +1,6 @@
 window.onload = function() {
 
+  // Cookies
   DataScripts = {
     googleAnalytics: function() {
       gtag('consent', 'update', {
@@ -7,7 +8,7 @@ window.onload = function() {
       });
     }
   }
-  // Cookies
+  
   if(!localStorage.getItem('choiceCookieUser')) {
 
     var cookiesBox = document.querySelector(".cookies");
@@ -40,7 +41,7 @@ window.onload = function() {
     DataScripts.googleAnalytics(); 
   }
 
-  // Scroll Smooth after click
+  // Automatic Smooth Scroll after click
   let nextSectionButton = document.querySelector(".arrow");
   nextSectionButton.addEventListener("click", function(e){
     downSection(e);
@@ -56,7 +57,7 @@ window.onload = function() {
   }
 
   // Alter Words
-  var secondsPerLoop  = 1.25;
+  var secondsPerLoop  = 1.5;
   var i               = 0;
   var targetElement   = document.querySelector(".container-words");
   var repetition      = setInterval(function() {
@@ -65,9 +66,11 @@ window.onload = function() {
   function alterWords(container) {
     var elements = container.children;    
     for(j = 0 ; j < elements.length; j++) {
+      elements[j].classList.remove("fade");
       elements[j].style.display = "none";
     }
-    elements[i].style.display = "inline";
+    elements[i].classList.add("fade");
+    elements[i].style.display = "inline-block";
     if (i == elements.length - 1) {
       i = 0;
     } else {
@@ -82,15 +85,11 @@ window.onload = function() {
 // Loading
 document.onreadystatechange = function() {
   if (document.readyState !== "complete") {
-      document.querySelector(
-        "body").style.visibility = "hidden";
-      document.querySelector(
-        ".load").style.visibility = "visible";
+      document.querySelector("body").style.visibility = "hidden";
+      document.querySelector(".load").style.visibility = "visible";
   } else {
-      document.querySelector(
-        ".load").style.display = "none";
-      document.querySelector(
-        "body").style.visibility = "visible";
+      document.querySelector(".load").style.display = "none";
+      document.querySelector("body").style.visibility = "visible";
   }
 };
 
