@@ -89,7 +89,7 @@ main {
       color: $color1;
       display: none;
       &:first-child {
-        display: inline;
+        opacity: 0;
       }
     }
   }

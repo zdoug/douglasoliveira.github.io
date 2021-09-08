@@ -9,6 +9,15 @@
   100% {opacity: 0; transform: translateY(1rem);}
 }
 
+@keyframes up {
+  0% {transform: translateY(0);}
+  100% {transform: translateY(-100%);}
+}
+
 .fade {
   animation: 2s fade ease forwards;
+}
+
+.up {
+  animation: .5s up ease-out forwards;
 }

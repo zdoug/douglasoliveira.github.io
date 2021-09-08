@@ -88,7 +88,8 @@ document.onreadystatechange = function() {
       document.querySelector("body").style.visibility = "hidden";
       document.querySelector(".load").style.visibility = "visible";
   } else {
-      document.querySelector(".load").style.display = "none";
+      // document.querySelector(".load").style.display = "none";
+      document.querySelector(".load").classList.add("up");
       document.querySelector("body").style.visibility = "visible";
   }
 };
