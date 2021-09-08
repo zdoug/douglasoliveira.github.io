@@ -40,7 +40,6 @@ window.onload = function() {
     DataScripts.googleAnalytics(); 
   }
 
-
   // Scroll Smooth after click
   let nextSectionButton = document.querySelector(".arrow");
   nextSectionButton.addEventListener("click", function(e){
@@ -55,8 +54,30 @@ window.onload = function() {
       behavior: 'smooth'
     });
   }
-  
+
+  // Alter Words
+  var secondsPerLoop  = 1.25;
+  var i               = 0;
+  var targetElement   = document.querySelector(".container-words");
+  var repetition      = setInterval(function() {
+    alterWords(targetElement, i)}, secondsPerLoop * 1000);
+
+  function alterWords(container) {
+    var elements = container.children;    
+    for(j = 0 ; j < elements.length; j++) {
+      elements[j].style.display = "none";
+    }
+    elements[i].style.display = "inline";
+    if (i == elements.length - 1) {
+      i = 0;
+    } else {
+      i++;
+    }  
+  }
+
+
 }
+// End window.onload
 
 // Loading
 document.onreadystatechange = function() {

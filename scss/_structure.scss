@@ -55,7 +55,10 @@ header {
   max-width: 100rem;
   margin: 0 auto;
   padding: 0 1rem;
-  display: flex;  
+  display: flex;
+}
+.wrap {
+  position: relative;
 }
 .container.col-flex {
   display: flex;
@@ -84,6 +87,10 @@ main {
     & strong {
       font-weight: 800;
       color: $color1;
+      display: none;
+      &:first-child {
+        display: inline;
+      }
     }
   }
   & p {
