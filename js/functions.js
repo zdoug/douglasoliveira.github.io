@@ -40,6 +40,7 @@ window.onload = function() {
   function loadDataScripts() {
     DataScripts.googleAnalytics(); 
   }
+  // End Cookies
 
   // Automatic Smooth Scroll after click
   let nextSectionButton = document.querySelector(".arrow");
@@ -78,6 +79,42 @@ window.onload = function() {
     }  
   }
 
+  // Typewriter Effect after Scroll
+  var elementHeight = document.querySelector("main").clientHeight;
+  var ty = false;
+
+  document.addEventListener("scroll", function(event){
+    scrollTop(event);
+  });
+
+  function scrollTop(event) {
+    if((window.scrollY >= (elementHeight / 4)) && !ty) {
+      ty = true;
+      typeWriter();
+    }
+    if (ty) {
+      event.preventDefault();
+    }
+  }
+
+  var letters = document.querySelector(".intro");
+  var txt = letters.textContent;
+  var height = letters.offsetHeight;
+  letters.textContent = "";
+  letters.style.height = height + "px";
+
+  var k = 0;
+  var speed = 15;
+
+  function typeWriter() {
+    if (k < txt.length) {
+      letters.innerHTML += txt.charAt(k);
+      k++;
+      setTimeout(typeWriter, speed);
+    }
+  }
+  // End Typewriter Effect after Scroll
+
 
 }
 // End window.onload
@@ -93,4 +130,5 @@ document.onreadystatechange = function() {
       document.querySelector("body").style.visibility = "visible";
   }
 };
+// End Loading
 
