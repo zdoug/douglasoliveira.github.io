@@ -71,7 +71,7 @@ window.onload = function() {
       elements[j].style.display = "none";
     }
     elements[i].classList.add("fade");
-    elements[i].style.display = "inline-block";
+    elements[i].style.display = "block";
     if (i == elements.length - 1) {
       i = 0;
     } else {

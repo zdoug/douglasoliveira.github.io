@@ -54,7 +54,7 @@ header {
 .container {
   max-width: 100rem;
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 0 3rem;
   display: flex;
 }
 .wrap {
@@ -84,8 +84,11 @@ main {
     margin-bottom: 3rem;
     margin-top: 8vh;
     position: relative;
+    font-family: "Space Grotesk", sans-serif;
+    letter-spacing: -1px;
+    line-height: 1.2;
     & strong {
-      font-weight: 800;
+      font-weight: 700;
       color: $color1;
       display: none;
       &:first-child {
@@ -117,8 +120,10 @@ section {
   background: white;
   flex: 0 0 50%;
   & h2 {
-    font-size: 4rem;
+    font-size: 3rem;
     margin-bottom: 2rem;
+    font-family: "Space Grotesk", sans-serif;
+    color: $color1;
   }
   & p, & ul li {
     font-size: 1.75rem;
@@ -134,12 +139,14 @@ section {
     max-height: 220px;
   }
   & h3.intro {
-    font-size: 3rem;
+    font-size: 2.5rem;
     padding-left: 5rem;
+    font-family: "Space Grotesk", sans-serif;
     flex-direction: column;
     justify-content: center;
     display: flex;
-    }
+    max-width: 1000px;
+  }
 }
 .portfolio-item {
   color: white;
@@ -153,10 +160,11 @@ section {
   }
   & h3 {
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 1.8em;
+    font-family: "Space Grotesk", sans-serif;
   }
   & h4 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     color: #787878;
     font-weight: 400;
     margin-bottom: 1.5rem;
@@ -177,6 +185,7 @@ section {
     font-size: 3rem;
     color: white;
     margin-bottom: 1rem;
+    font-family: "Space Grotesk", sans-serif;
   }
   & p {
     color: white;
@@ -200,7 +209,7 @@ section {
 .portfolio-item {
 	flex: 0 0 32%;
   padding: 4rem;
-  background: #000;
+  background: $color-text;
 	font-size: 14px;
   margin-bottom: 2rem;
 }
