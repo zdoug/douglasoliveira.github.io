@@ -13,6 +13,7 @@ body {
 }
 header {
   position: absolute;
+  z-index: 2;
   width: 100%;
   padding: 2rem 0;
   & .container > div, & .container ul {
@@ -46,8 +47,13 @@ header {
       margin-left: 0;
     }
     & li a {
-      color: white;
+      color: $color-text;
       font-size: 2rem;
+      transition: color 0.2s ease-in;
+      &:hover {
+        color: white;
+        transition: color 0.2s ease-out;
+      }
     }
   }
 }
@@ -66,12 +72,16 @@ header {
 .col-flex {
   display: flex;
 }
+main, section {
+  position: relative;
+  z-index: 1;
+}
 main {
   display: flex;
   height: 100vh;
   justify-content: center;
   flex-direction: column;
-  background: $color-text;
+  background: $color1;
   & .container {
     flex-direction: column;
   }
@@ -89,7 +99,7 @@ main {
     line-height: 1.2;
     & strong {
       font-weight: 700;
-      color: $color1;
+      color: $color-text;
       display: none;
       &:first-child {
         opacity: 0;
@@ -105,7 +115,7 @@ main {
 }
 
 section {
-  padding: 4rem 0;
+  padding: 6rem 0;
 }
 .img-fluid {
   display: block;
@@ -116,7 +126,7 @@ section {
 }
 .card {
   padding: 3rem;
-  border: 2px solid $color-text;
+  border: 6px solid #eaeaea;
   background: white;
   flex: 0 0 50%;
   & h2 {
@@ -134,6 +144,7 @@ section {
 }
 #services {
   position: relative;
+  background: white;
   & img.img-avatar {
     border-radius: 50%;
     max-height: 220px;
@@ -160,8 +171,9 @@ section {
   }
   & h3 {
     font-weight: 700;
-    font-size: 1.8em;
+    font-size: 1.6em;
     font-family: "Space Grotesk", sans-serif;
+    margin-top: 1rem;
   }
   & h4 {
     font-size: 1.25rem;
@@ -177,14 +189,14 @@ section {
 }
 #clients {
   overflow: hidden;
-  background: $color1;
+  background: $color-text;
   & .container {
     flex-direction: column;
   }
   & h2 {
     font-size: 3rem;
     color: white;
-    margin-bottom: 1rem;
+    margin-bottom: 4rem;
     font-family: "Space Grotesk", sans-serif;
   }
   & p {
@@ -208,8 +220,6 @@ section {
 }
 .portfolio-item {
 	flex: 0 0 32%;
-  padding: 4rem;
-  background: $color-text;
 	font-size: 14px;
   margin-bottom: 2rem;
 }
@@ -266,8 +276,13 @@ section {
 }
 footer {
   padding: 4rem 0;
+  position: sticky;
+  bottom: 0;
+  z-index: 0;
   & .container div {
     flex: 0 0 50%;
+    display: flex;
+    align-items: center;
     padding-right: 10%;
     &  p {
       font-size: 3rem;
@@ -366,6 +381,6 @@ footer p {
   align-items: center;
   justify-content: center;
   color: white;
-  background-color: $color1;
+  background-color: $color-text;
   z-index: 10000;
 }
