@@ -282,7 +282,7 @@ footer {
   & .container div {
     flex: 0 0 50%;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     padding-right: 10%;
     &  p {
       font-size: 3rem;
