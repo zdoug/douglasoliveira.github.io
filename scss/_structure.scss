@@ -384,11 +384,11 @@ footer p {
   background-color: $color-text;
   z-index: 10000;
 }
-a[title="Instagram"] {
+a[data-message] {
   position: relative;
 }
-a[title="Instagram"]::after {
-  content: "No Instagram, Posts e Stories com dicas e projetos nos quais estou trabalhando.";
+a[data-message]::after {
+  content: attr(data-message);
   background: #fff;
   position: absolute;
   top: 130%;
@@ -400,4 +400,5 @@ a[title="Instagram"]::after {
   text-align: left;
   opacity: 0;
   pointer-events: none;
+  transition: opacity 0.2s ease-in;
 }

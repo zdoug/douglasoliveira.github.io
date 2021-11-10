@@ -5,9 +5,10 @@
   .container-card .card:first-child + .card {
     border-left-width: 3px;
   }
-  a[title="Instagram"] {
+  a[data-message] {
     &:hover::after {
       opacity: 1;
+      transition: opacity 0.2s ease-in;
     }
   }
 }
