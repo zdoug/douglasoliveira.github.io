@@ -5,6 +5,11 @@
   .container-card .card:first-child + .card {
     border-left-width: 3px;
   }
+  a[title="Instagram"] {
+    &:hover::after {
+      opacity: 1;
+    }
+  }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1500px) {
