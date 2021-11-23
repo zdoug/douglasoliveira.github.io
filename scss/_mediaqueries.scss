@@ -1,9 +1,9 @@
 @media screen and (min-width: 992px) {
   .container-card .card:first-child {
-    border-right-width: 3px;
+    border-bottom-width: 3px;
   }
   .container-card .card:first-child + .card {
-    border-left-width: 3px;
+    border-bottom-width: 3px;
   }
   a[data-message] {
     &:hover::after {
