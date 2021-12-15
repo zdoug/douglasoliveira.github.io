@@ -8,7 +8,7 @@ window.onload = function() {
       });
     }
   }
-  // If user don't choose cookie options before
+  // If user don't choose cookie options before enter website
   if(!localStorage.getItem('choiceCookieUser')) {
 
     var cookiesBox = document.querySelector(".cookies");
