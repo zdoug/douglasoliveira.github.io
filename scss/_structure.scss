@@ -403,3 +403,22 @@ a[data-message]::after {
   pointer-events: none;
   transition: opacity 0.2s ease-in;
 }
+
+.list-links {
+  list-style: none;
+  padding: 0;
+  & li {
+    margin-bottom: 1rem;
+    & a {
+      background: white;
+      padding: 1rem 2rem;
+      color: black;
+      font-size: 1.25rem;
+      font-family: "Space Grotesk", sans-serif;
+      text-decoration: none;
+      border-radius: 6px;
+      display: block;
+      text-align: left;
+    }
+  }
+}
