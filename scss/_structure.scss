@@ -137,7 +137,12 @@ section {
     color: $color1;
   }
   & p, & ul li {
-    font-size: 1.75rem;
+    font-size: 1.6rem;
+    margin-top: 1.4rem;
+    line-height: 1.4;
+  }
+  & p:first-child {
+    margin-top: 0;
   }
   & ul {
     margin-top: 1rem;
