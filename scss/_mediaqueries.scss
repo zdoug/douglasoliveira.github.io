@@ -115,6 +115,9 @@
     & h2 {
       font-size: 2.5rem;
     }
+    & p, & ul li {
+      font-size: 1.6rem;
+    }
   }
   .card + .card {
     border-top-width: 0;
