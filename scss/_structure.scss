@@ -54,6 +54,10 @@ header {
         color: white;
         transition: color 0.2s ease-out;
       }
+      & img {
+        width: 36px;
+        transform: translateY(7px);
+      }
     }
   }
 }

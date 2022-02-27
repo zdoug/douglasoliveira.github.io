@@ -97,6 +97,11 @@
   header #logo img {
     width: 150px;
   }
+
+  header ul li a img {
+    width: 23px;
+    transform: translateY(6px);
+  }
   
   .container-info, .container-card {
     flex-direction: column;
