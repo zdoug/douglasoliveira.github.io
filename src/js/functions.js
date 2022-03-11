@@ -126,8 +126,10 @@ document.onreadystatechange = function() {
       document.querySelector(".load").style.visibility = "visible";
   } else {
       // document.querySelector(".load").style.display = "none";
-      document.querySelector(".load").classList.add("up");
-      document.querySelector("body").style.visibility = "visible";
+      setTimeout(function(){
+        document.querySelector(".load").classList.add("up");
+        document.querySelector("body").style.visibility = "visible";
+      }, 2000);
   }
 };
 // End Loading
