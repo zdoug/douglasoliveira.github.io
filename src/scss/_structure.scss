@@ -50,6 +50,8 @@ header {
       color: $color-text;
       font-size: 2rem;
       transition: color 0.2s ease-in;
+      text-decoration: none;
+      font-weight: bold;
       &:hover {
         color: white;
         transition: color 0.2s ease-out;
@@ -419,6 +421,7 @@ a[data-message]::after {
   background: #fff;
   position: absolute;
   top: 130%;
+  font-weight: 400;
   color: black;
   right: 0;
   font-size: 1rem;
