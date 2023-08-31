@@ -189,7 +189,7 @@ section {
   max-height: 220px;
 }
 #services h3.intro {
-  font-size: 2.5rem;
+  font-size: 2rem;
   padding-left: 5rem;
   font-family: "Space Grotesk", sans-serif;
   flex-direction: column;
@@ -219,7 +219,6 @@ section {
   font-size: 1.25rem;
   color: #787878;
   font-weight: 400;
-  margin-bottom: 1.5rem;
 }
 .portfolio-item a.btn-link:hover i {
   color: #ff004e;
@@ -248,21 +247,16 @@ section {
 #wrapper {
   width: 100%;
 }
-#wrapper.container {
-  flex-direction: row;
-}
-
 #wrapper ul {
   list-style: none;
   display: flex;
-  justify-content: space-between;
+  gap: 2rem 2%;
   flex-wrap: wrap;
 }
 
 .portfolio-item {
   flex: 0 0 32%;
   font-size: 14px;
-  margin-bottom: 2rem;
 }
 
 #phrases {
