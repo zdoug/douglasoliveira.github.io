@@ -436,18 +436,28 @@ a[data-message]::after {
 .list-links {
   list-style: none;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
   & li {
-    margin-bottom: 1rem;
     & a {
       background: white;
-      padding: 1rem 5rem 1rem 2rem;
+      padding: 1rem 2rem;
       color: black;
       font-size: 1.25rem;
       font-family: "Space Grotesk", sans-serif;
       text-decoration: none;
       border-radius: 6px;
       display: block;
-      text-align: left;
+      text-align: center;
+      transition: box-shadow .4s ease;
+      &:hover, &:focus {
+        box-shadow: -5px -5px 0px rgba(0,0,0,.3);
+        transition: box-shadow .2s ease;
+      }
+      & i {
+        margin-right: 1rem;
+      }
     }
   }
 }
