@@ -159,6 +159,8 @@
   .list-links li a {
     font-size: 2rem;
     padding: 1.5rem 3rem;
+    min-width: initial;
+    width: 80vw;
   }
 }
 

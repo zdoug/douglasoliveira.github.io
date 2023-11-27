@@ -464,6 +464,7 @@ a[data-message]::after {
   display: block;
   text-align: center;
   transition: box-shadow 0.4s ease;
+  min-width: 30vw;
 }
 .list-links li a:hover, .list-links li a:focus {
   box-shadow: -5px -5px 0px rgba(0, 0, 0, 0.3);
@@ -648,6 +649,8 @@ a[data-message]::after {
   .list-links li a {
     font-size: 2rem;
     padding: 1.5rem 3rem;
+    min-width: initial;
+    width: 80vw;
   }
 }
 @media screen and (max-width: 600px) {

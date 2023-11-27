@@ -447,6 +447,7 @@ a[data-message]::after {
       display: block;
       text-align: center;
       transition: box-shadow .4s ease;
+      min-width: 30vw;
       &:hover, &:focus {
         box-shadow: -5px -5px 0px rgba(0,0,0,.3);
         transition: box-shadow .2s ease;
