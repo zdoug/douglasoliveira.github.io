@@ -1,15 +1,15 @@
 window.onload = function() {
 
   // Cookies
-  DataScripts = {
+  /*DataScripts = {
     googleAnalytics: function() {
       gtag('consent', 'update', {
         'ad_storage': 'granted'
       });
     }
-  }
+  }*/
   // If user don't choose cookie options before enter website
-  if(!localStorage.getItem('choiceCookieUser')) {
+  /*if(!localStorage.getItem('choiceCookieUser')) {
 
     var cookiesBox = document.querySelector(".cookies");
     cookiesBox.classList.remove("hide");
@@ -39,7 +39,7 @@ window.onload = function() {
   
   function loadDataScripts() {
     DataScripts.googleAnalytics(); 
-  }
+  }*/
   // End Cookies
 
   // Automatic Smooth Scroll after click
