@@ -51,7 +51,7 @@ header ul li:first-child {
   margin-left: 0;
 }
 header ul li a {
-  color: #292929;
+  color: #064080;
   font-size: 2rem;
   transition: color 0.2s ease-in;
   text-decoration: none;
@@ -95,7 +95,7 @@ main {
   height: 100vh;
   justify-content: center;
   flex-direction: column;
-  background: #ff004e;
+  background: #0062cd;
 }
 main .container {
   flex-direction: column;
@@ -118,7 +118,7 @@ main h1 span {
 }
 main h1 strong {
   font-weight: 700;
-  color: #292929;
+  color: #064080;
   display: none;
 }
 main h1 strong:first-child {
@@ -159,7 +159,7 @@ section {
   font-size: 3rem;
   margin-bottom: 2rem;
   font-family: "Space Grotesk", sans-serif;
-  color: #ff004e;
+  color: #0062cd;
 }
 .card p {
   font-size: 1.4rem;
@@ -182,7 +182,7 @@ section {
   border-bottom: none;
 }
 .card ul li i {
-  color: #ff004e;
+  color: #0062cd;
   vertical-align: middle;
   margin-right: 1rem;
 }
@@ -228,12 +228,12 @@ section {
   font-weight: 400;
 }
 .portfolio-item a.btn-link:hover i {
-  color: #ff004e;
+  color: #0062cd;
 }
 
 #clients {
   overflow: hidden;
-  background: #292929;
+  background: #064080;
 }
 #clients .container {
   flex-direction: column;
@@ -268,7 +268,7 @@ section {
 
 #phrases {
   background: white;
-  color: #292929;
+  color: #064080;
 }
 #phrases img {
   border-radius: 50%;
@@ -279,16 +279,16 @@ section {
 }
 
 #brands {
-  background: #292929;
+  background: #064080;
   color: #fff;
 }
 #brands h2, #brands ul {
   grid-column: 1/-1;
 }
 #brands h2 {
-  background-color: #292929;
+  background-color: #064080;
   font-size: 3rem;
-  background: #ff004e;
+  background: #0062cd;
   font-weight: 800;
   margin-bottom: 5rem;
   text-align: center;
@@ -337,7 +337,7 @@ footer .container div p:first-child {
 }
 
 footer p a {
-  color: #292929;
+  color: #064080;
   text-decoration: none;
   position: relative;
   font-weight: 500;
@@ -348,7 +348,7 @@ footer p a:after {
   content: "";
   width: 100%;
   height: 5px;
-  background: #ff004e;
+  background: #0062cd;
   top: 100%;
   left: 0;
   transition: all 0.2s ease;
@@ -428,7 +428,7 @@ footer p.copyright {
   align-items: center;
   justify-content: center;
   color: white;
-  background-color: #292929;
+  background-color: #064080;
   z-index: 10000;
 }
 
@@ -481,6 +481,10 @@ a[data-message]::after {
   margin-right: 1rem;
 }
 
+#loom-companion-mv3 {
+  display: none;
+}
+
 .url-external {
   display: inline-block;
   font-size: 1rem;
@@ -496,7 +500,7 @@ a[data-message]::after {
 }
 
 .arrow {
-  color: #292929;
+  color: #064080;
   font-size: 4rem;
   animation: 0.5s intro ease;
   position: absolute;
