@@ -103,6 +103,9 @@ main {
     font-family: "Space Grotesk", sans-serif;
     letter-spacing: -1px;
     line-height: 1.2;
+    & span {
+      position: relative;
+    }
     & strong {
       font-weight: 700;
       color: $color-text;
@@ -130,6 +133,9 @@ section {
 .container-card {
   margin-top: 5rem;
   flex-wrap: wrap;
+}
+.container-info {
+  align-items: center;
 }
 .card {
   padding: 3rem;
@@ -227,7 +233,7 @@ section {
   & p {
     color: white;
     font-size: 1.5rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     max-width: 30 * 1.5rem;
   }
 }

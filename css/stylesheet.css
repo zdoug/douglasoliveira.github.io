@@ -113,6 +113,9 @@ main h1 {
   letter-spacing: -1px;
   line-height: 1.2;
 }
+main h1 span {
+  position: relative;
+}
 main h1 strong {
   font-weight: 700;
   color: #292929;
@@ -140,6 +143,10 @@ section {
 .container-card {
   margin-top: 5rem;
   flex-wrap: wrap;
+}
+
+.container-info {
+  align-items: center;
 }
 
 .card {
@@ -240,7 +247,7 @@ section {
 #clients p {
   color: white;
   font-size: 1.5rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   max-width: 45rem;
 }
 
